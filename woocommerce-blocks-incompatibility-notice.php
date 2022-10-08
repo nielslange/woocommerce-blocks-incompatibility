@@ -1,11 +1,11 @@
 <?php
 /**
- * Plugin Name: WooCommerce Blocks Incompatibility
+ * Plugin Name: WooCommerce Blocks Incompatibility Notice
  * Description: Shows a notice if a plugin gets activated that is incompatible with WooCommerce Blocks.
  * Version: 1.0.0
- * Author: Niels Lange
- * Author URI: https://nielslange.com/
- * Text Domain: woocommerce-blocks-incompatibility
+ * Author: Automattic
+ * Author URI: https://automattic.com/
+ * Text Domain: woocommerce-blocks-incompatibility-notice
  * License: GNU General Public License v3.0
  * License URI: http://www.gnu.org/licenses/gpl-3.0.html
  *
@@ -138,7 +138,7 @@ class WC_Blocks_Incompatibility {
 					$value['Name'],
 					sprintf(
 					/* translators: %1$s is the plugin URL, %2$s is the plugin name. */
-						__( '<a href="%1$s">%1$s</a>', 'woocommerce-blocks-incompatibility' ),
+						__( '<a href="%1$s">%1$s</a>', 'woocommerce-blocks-incompatibility-notice' ),
 						$value['PluginURI'],
 						$value['Name']
 					)
@@ -154,7 +154,7 @@ class WC_Blocks_Incompatibility {
 					$value['Name'],
 					sprintf(
 					/* translators: %1$s is the plugin URL, %2$s is the plugin name. */
-						__( '<a href="%1$s">%1$s</a>', 'woocommerce-blocks-incompatibility' ),
+						__( '<a href="%1$s">%1$s</a>', 'woocommerce-blocks-incompatibility-notice' ),
 						$value['PluginURI'],
 						$value['Name']
 					)
@@ -172,10 +172,10 @@ class WC_Blocks_Incompatibility {
                     <a href="https://woocommerce.com/document/cart-checkout-blocks-support-status/#section-7" class="button">%4$s</a>
                 </p>
             </div>',
-				__( 'WooCommerce Blocks compatibility issues discovered. The following plugin(s) might break your store:', 'woocommerce-blocks-incompatibility' ),
+				__( 'WooCommerce Blocks compatibility issues discovered. The following plugin(s) might break your store:', 'woocommerce-blocks-incompatibility-notice' ),
 				$breaking_extensions,
-				__( 'View Compatible Extensions', 'woocommerce-blocks-incompatibility' ),
-				__( 'View Incompatible Extensions', 'woocommerce-blocks-incompatibility' ),
+				__( 'View Compatible Extensions', 'woocommerce-blocks-incompatibility-notice' ),
+				__( 'View Incompatible Extensions', 'woocommerce-blocks-incompatibility-notice' ),
 			);
 
 			echo wp_kses( $breaking_notice, 'post' );
@@ -191,10 +191,10 @@ class WC_Blocks_Incompatibility {
                     <a href="https://woocommerce.com/document/cart-checkout-blocks-support-status/#section-7" class="button">%4$s</a>
                 </p>
             </div>',
-				__( 'WooCommerce Blocks compatibility issues discovered. The following plugin(s) might not work as expected:', 'woocommerce-blocks-incompatibility' ),
+				__( 'WooCommerce Blocks compatibility issues discovered. The following plugin(s) might not work as expected:', 'woocommerce-blocks-incompatibility-notice' ),
 				$non_breaking_extensions,
-				__( 'View Compatible Extensions', 'woocommerce-blocks-incompatibility' ),
-				__( 'View Incompatible Extensions', 'woocommerce-blocks-incompatibility' ),
+				__( 'View Compatible Extensions', 'woocommerce-blocks-incompatibility-notice' ),
+				__( 'View Incompatible Extensions', 'woocommerce-blocks-incompatibility-notice' ),
 			);
 
 			echo wp_kses( $non_breaking_notice, 'post' );

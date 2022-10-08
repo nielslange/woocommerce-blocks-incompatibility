@@ -1,5 +1,5 @@
 {
-  "name": "nielslange/woocommerce-blocks-incompatibility",
+  "name": "nielslange/woocommerce-blocks-incompatibility-notice",
   "type": "wordpress-plugin",
   "license": "GPL-3.0-or-later",
   "require": {
