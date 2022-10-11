@@ -1,17 +1,12 @@
 {
-  "breaking": ["amp"],
-  "non-breaking": [
+  "breaking": [
+    "amp",
     "local-pickup-plus",
-    "mailchimp-for-woocommerce",
+    "mailchimp-for-woocommerce"
+  ],
+  "non-breaking": [
     "klarna-payments-for-woocommerce",
-    "razorpay",
-    "smart-coupons",
-    "woocommerce-checkout-add-ons",
-    "woocommerce-checkout-field-editor",
-    "woocommerce-eu-vat-number",
     "woocommerce-gateway-amazon-payments-advanced",
-    "woocommerce-gateway-purchase-order",
-    "woocommerce-memberships",
     "woocommerce-paypal-payments"
   ]
 }
